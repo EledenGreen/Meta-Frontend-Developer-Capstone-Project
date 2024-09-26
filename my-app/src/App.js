@@ -1,7 +1,16 @@
 import './App.css'
 
 function App() {
-  return <div className="App">Homepage</div>
+  return (
+    <>
+      <Navigation />
+      <Hero />
+      <Highlights />
+      <Testimonials />
+      <About />
+      <Footer />
+    </>
+  )
 }
 
 export default App
