@@ -1,14 +1,17 @@
 import './App.css'
+import Navigation from './components/Navigation'
 
 function App() {
   return (
     <>
       <Navigation />
+      {/*
       <Hero />
-      <Highlights />
+      <Highlights />  
       <Testimonials />
       <About />
-      <Footer />
+      <Footer />    
+      */}
     </>
   )
 }
