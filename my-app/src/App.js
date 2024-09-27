@@ -1,14 +1,16 @@
 import './App.css'
 import Navigation from './components/Navigation'
 import Hero from './components/Hero'
+import Highlights from './components/Highlights'
 
 function App() {
   return (
     <>
       <Navigation />
       <Hero />
+      <Highlights />
+
       {/*
-      <Highlights />  
       <Testimonials />
       <About />
       <Footer />    

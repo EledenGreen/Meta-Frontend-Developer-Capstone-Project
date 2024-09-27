@@ -22,3 +22,31 @@ nav ul {
 .hero img {
   max-width: 40%;
 }
+
+.specials {
+  background-color: bisque;
+  text-align: center;
+}
+
+.specials-grid {
+  display: grid;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.specials-item {
+  background-color: rgb(172, 202, 229);
+  padding: 20px;
+}
+
+.specials-item button {
+  margin-top: 10px;
+}
+
+.specials-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
