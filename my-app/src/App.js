@@ -3,6 +3,7 @@ import Navigation from './components/Navigation'
 import Hero from './components/Hero'
 import Highlights from './components/Highlights'
 import Testimonials from './components/Testimonials'
+import About from './components/About'
 
 function App() {
   return (
@@ -11,9 +12,9 @@ function App() {
       <Hero />
       <Highlights />
       <Testimonials />
+      <About />
 
       {/*
-      <About />
       <Footer />    
       */}
     </>

@@ -74,3 +74,18 @@ nav ul {
   justify-content: space-around;
   align-items: center;
 }
+
+.about {
+  background-color: aliceblue;
+  justify-content: center;
+  display: flex;
+  padding: 50px;
+}
+
+.about-content {
+  max-width: 20%;
+}
+
+.about img {
+  max-width: 50%;
+}
