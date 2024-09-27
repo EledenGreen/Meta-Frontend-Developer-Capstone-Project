@@ -2,6 +2,7 @@ import './App.css'
 import Navigation from './components/Navigation'
 import Hero from './components/Hero'
 import Highlights from './components/Highlights'
+import Testimonials from './components/Testimonials'
 
 function App() {
   return (
@@ -9,9 +10,9 @@ function App() {
       <Navigation />
       <Hero />
       <Highlights />
+      <Testimonials />
 
       {/*
-      <Testimonials />
       <About />
       <Footer />    
       */}

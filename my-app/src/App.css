@@ -50,3 +50,27 @@ nav ul {
   justify-content: space-around;
   align-items: center;
 }
+
+.testimonials {
+  background-color: rgb(221, 195, 195);
+  text-align: center;
+}
+
+.testimonials-grid {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.testimonials-item {
+  background-color: beige;
+  padding: 20px;
+}
+
+.testimonials-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
