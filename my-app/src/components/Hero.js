@@ -3,7 +3,7 @@ const Hero = () => {
     <>
       <section class="hero">
         <div class="hero-content">
-          <h2>Litte Lemon</h2>
+          <h2>Little Lemon</h2>
           <h3>Chicago</h3>
           <p>
             We are a family owned restaurant focused on organic and quality

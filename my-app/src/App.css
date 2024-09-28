@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Markazi+Text:wght@400..700&display=swap');
+
+button {
+  background-color: #f4ce14;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 4px 4px;
+}
+
+button:active {
+  background-color: #ffffff;
+  border: 2px solid;
+}
+
 nav ul {
   display: flex;
   flex-direction: row;
@@ -7,9 +27,12 @@ nav ul {
   column-gap: 15px;
   align-items: center;
 }
+nav li {
+  font-family: 'Karla', sans-serif;
+}
 
 .hero {
-  background-color: darkslategrey;
+  background-color: #6e6f6e;
   display: flex;
   justify-content: center;
   padding: 50px;
@@ -19,13 +42,40 @@ nav ul {
   max-width: 20%;
 }
 
+.hero-content > h2 {
+  font-family: 'Markazi Text', serif;
+  font-weight: normal;
+  font-size: 64px;
+  color: #f4ce14;
+}
+
+.hero-content h3 {
+  font-family: 'Markazi Text', serif;
+  font-weight: normal;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.hero-content p {
+  font-family: 'Karla';
+  font-weight: normal;
+  font-size: 18px;
+  color: #ffffff;
+}
+
 .hero img {
   max-width: 40%;
 }
 
 .specials {
-  background-color: bisque;
+  background-color: #ffffff;
   text-align: center;
+}
+
+.specials-header > h2 {
+  font-family: 'Markazi Text';
+  font-weight: normal;
+  font-size: 40px;
 }
 
 .specials-grid {
@@ -37,8 +87,15 @@ nav ul {
 }
 
 .specials-item {
-  background-color: rgb(172, 202, 229);
+  background-color: #edefee;
   padding: 20px;
+}
+
+.specials-item h3,
+p {
+  font-family: 'Markazi Text';
+  font-weight: normal;
+  font-size: 24px;
 }
 
 .specials-item button {
@@ -52,8 +109,14 @@ nav ul {
 }
 
 .testimonials {
-  background-color: rgb(221, 195, 195);
+  background-color: #d9d9d9;
   text-align: center;
+}
+
+.testimonials-header > h2 {
+  font-family: 'Markazi Text';
+  font-weight: normal;
+  font-size: 40px;
 }
 
 .testimonials-grid {
@@ -65,8 +128,17 @@ nav ul {
 }
 
 .testimonials-item {
-  background-color: beige;
+  background-color: #ffffff;
   padding: 20px;
+  font-family: 'Karla';
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.testimonials-item > p {
+  font-family: 'Karla';
+  font-weight: lighter;
+  font-size: 14px;
 }
 
 .testimonials-header {
@@ -82,6 +154,24 @@ nav ul {
   padding: 50px;
 }
 
+.about-content h1 {
+  font-family: 'Markazi Text';
+  font-weight: normal;
+  font-size: 64px;
+}
+
+.about-content h2 {
+  font-family: 'Markazi Text';
+  font-weight: normal;
+  font-size: 40px;
+}
+
+.about-content p {
+  font-family: 'Karla';
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .about-content {
   max-width: 20%;
 }
@@ -91,7 +181,7 @@ nav ul {
 }
 
 .footer {
-  background-color: rgb(100, 100, 100);
+  background-color: #d9d9d9;
   text-align: center;
 }
 
@@ -101,4 +191,17 @@ nav ul {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 20px;
+}
+
+.footer-item > h4 {
+  font-family: 'Karla';
+  font-weight: bolder;
+  font-size: 20px;
+  color: #495e57;
+}
+
+.footer-item p {
+  font-family: 'Karla';
+  font-weight: normal;
+  font-size: 20px;
 }
