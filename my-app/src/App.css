@@ -89,3 +89,16 @@ nav ul {
 .about img {
   max-width: 50%;
 }
+
+.footer {
+  background-color: rgb(100, 100, 100);
+  text-align: center;
+}
+
+.footer-grid {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
