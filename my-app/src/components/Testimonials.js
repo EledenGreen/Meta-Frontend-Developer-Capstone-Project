@@ -1,30 +1,30 @@
 const Testimonials = () => {
   return (
     <>
-      <section class="testimonials">
-        <div class="testimonials-header">
+      <section className="testimonials">
+        <div className="testimonials-header">
           <h2>Testimonials</h2>
         </div>
-        <div class="testimonials-grid">
-          <div class="testimonials-item">
+        <div className="testimonials-grid">
+          <div className="testimonials-item">
             <h3>Rating</h3>
-            <div class="testimonial-detail">
+            <div className="testimonial-detail">
               <img src="profile1.jpg" alt="profile1" />
               <h3>Name</h3>
             </div>
             <p>Review text</p>
           </div>
-          <div class="testimonials-item">
+          <div className="testimonials-item">
             <h3>Rating</h3>
-            <div class="testimonial-detail">
+            <div className="testimonial-detail">
               <img src="profile1.jpg" alt="profile1" />
               <h3>Name</h3>
             </div>
             <p>Review text</p>
           </div>
-          <div class="testimonials-item">
+          <div className="testimonials-item">
             <h3>Rating</h3>
-            <div class="testimonial-detail">
+            <div className="testimonial-detail">
               <img src="profile1.jpg" alt="profile1" />
               <h3>Name</h3>
             </div>

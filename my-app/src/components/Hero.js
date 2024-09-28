@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 const Hero = () => {
   return (
     <>
-      <section class="hero">
-        <div class="hero-content">
+      <section className="hero">
+        <div className="hero-content">
           <h2>Little Lemon</h2>
           <h3>Chicago</h3>
           <p>
@@ -12,7 +12,7 @@ const Hero = () => {
             products and dishes.
           </p>
           <Link to="/BookingPage">
-            <button class="btn">Reserve a table</button>
+            <button className="btn">Reserve a table</button>
           </Link>
         </div>
         <img src="hero-img.jpg" alt="hero img" />
