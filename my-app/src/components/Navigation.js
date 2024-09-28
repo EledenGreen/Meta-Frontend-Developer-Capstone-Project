@@ -1,4 +1,5 @@
 import img from '../images/Logo.svg'
+import { Link } from 'react-router-dom'
 
 const Navigation = () => {
   return (
@@ -6,13 +7,25 @@ const Navigation = () => {
       <nav>
         <ul>
           <li>
-            <img src={img} alt="no prop" />
+            <Link to="/">
+              <img src={img} alt="no prop" />
+            </Link>
           </li>
-          <li>About</li>
-          <li>Menu</li>
-          <li>Reservations</li>
-          <li>Order Online</li>
-          <li>Login</li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/menu">Menu</Link>
+          </li>
+          <li>
+            <Link to="/reservation">Reservations</Link>
+          </li>
+          <li>
+            <Link to="/order">Order Online</Link>
+          </li>
+          <li>
+            <Link to="/login">Login</Link>
+          </li>
         </ul>
       </nav>
     </>
