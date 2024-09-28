@@ -205,3 +205,11 @@ p {
   font-weight: normal;
   font-size: 20px;
 }
+
+.bookingForm {
+  display: grid;
+  max-width: 200px;
+  gap: 20px;
+  margin-left: 5%;
+  margin-bottom: 2%;
+}

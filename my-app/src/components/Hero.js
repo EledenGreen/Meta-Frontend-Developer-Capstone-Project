@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const Hero = () => {
   return (
     <>
@@ -9,7 +11,9 @@ const Hero = () => {
             We are a family owned restaurant focused on organic and quality
             products and dishes.
           </p>
-          <button class="btn">Reserve a table</button>
+          <Link to="/BookingPage">
+            <button class="btn">Reserve a table</button>
+          </Link>
         </div>
         <img src="hero-img.jpg" alt="hero img" />
       </section>

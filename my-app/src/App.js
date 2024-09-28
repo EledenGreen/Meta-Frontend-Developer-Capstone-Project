@@ -10,11 +10,13 @@ import Menu from './components/Menu'
 import Reservation from './components/Reservation'
 import Login from './components/Login'
 import Order from './components/Order'
+import BookingPage from './components/BookingPage'
 
 function App() {
   return (
     <Router>
       <Navigation />
+
       <Routes>
         <Route
           path="/"
@@ -33,6 +35,7 @@ function App() {
         <Route path="/reservation" element={<Reservation />} />
         <Route path="/order" element={<Order />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/BookingPage" element={<BookingPage />} />
       </Routes>
 
       <Footer />
