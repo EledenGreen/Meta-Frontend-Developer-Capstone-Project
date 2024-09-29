@@ -11,6 +11,7 @@ import Reservation from './components/Reservation'
 import Login from './components/Login'
 import Order from './components/Order'
 import BookingPage from './components/BookingPage'
+import ConfirmedBooking from './components/ConfirmedBooking'
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path="/order" element={<Order />} />
         <Route path="/login" element={<Login />} />
         <Route path="/BookingPage" element={<BookingPage />} />
+        <Route path="/confirmBooking" element={<ConfirmedBooking />} />
       </Routes>
 
       <Footer />

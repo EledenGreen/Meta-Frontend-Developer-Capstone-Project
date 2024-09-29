@@ -1,18 +1,26 @@
 import { useState } from 'react'
 
-const BookingForm = ({ setTime, availableTimes, dispatch }) => {
+const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
+  const [time, setTime] = useState()
   const [date, setDate] = useState()
   const [guest, setGuest] = useState()
   const [occasion, setOccassion] = useState()
 
   const handleDateChange = (event) => {
     const selectedDate = event.target.value
+    setDate(selectedDate)
     dispatch({ type: 'UPDATE_TIMES', payload: selectedDate })
   }
 
   return (
     <>
-      <form className="bookingForm">
+      <form
+        className="bookingForm"
+        onSubmit={(e) => {
+          e.preventDefault()
+          submitForm(time, date, guest, occasion)
+        }}
+      >
         <h1>Booking</h1>
         <label htmlFor="res-date">Choose date</label>
         <input type="date" id="res-date" onChange={handleDateChange} />

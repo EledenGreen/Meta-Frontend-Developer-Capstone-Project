@@ -1,6 +1,7 @@
 import BookingForm from './BookingForm'
 import { useEffect, useReducer, useState } from 'react'
-import { fetchAPI } from '../utils/api'
+import { fetchAPI, submitAPI } from '../utils/api'
+import { useNavigate } from 'react-router-dom'
 
 export const updateTimes = (state, action) => {
   switch (action.type) {
@@ -20,17 +21,23 @@ export const initializeTimes = () => {
 }
 
 const BookingPage = () => {
-  const [time, setTime] = useState()
   const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes())
+  const navigate = useNavigate()
+
+  const submitForm = (date, time, guest, occasion) => {
+    const result = submitAPI(date, time, guest, occasion)
+    if (result) {
+      navigate('/confirmBooking')
+    }
+  }
 
   return (
     <>
       <hr />
-
       <BookingForm
-        setTime={setTime}
         availableTimes={availableTimes.times}
         dispatch={dispatch}
+        submitForm={submitForm}
       />
     </>
   )
