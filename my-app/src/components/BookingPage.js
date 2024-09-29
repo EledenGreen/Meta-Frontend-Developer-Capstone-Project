@@ -29,6 +29,8 @@ const BookingPage = () => {
     if (result) {
       navigate('/confirmBooking')
     }
+
+    console.log(date, time, guest, occasion)
   }
 
   return (
