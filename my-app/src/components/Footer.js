@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import footerimg from '../images/restaurant3.jpg'
 const Footer = () => {
   return (
@@ -9,24 +10,44 @@ const Footer = () => {
           </div>
           <div className="footer-item">
             <h4>Navigation</h4>
-            <p>Home</p>
-            <p>About</p>
-            <p>Menu</p>
-            <p>Reservation</p>
-            <p>Order Online</p>
-            <p>Login</p>
+            <Link to="/">
+              <p>Home</p>
+            </Link>
+            <Link to="/about">
+              <p>About</p>
+            </Link>
+            <Link to="/menu">
+              <p>Menu</p>
+            </Link>
+            <Link to="/reservation">
+              <p>Reservation</p>
+            </Link>
+            <Link to="/order">
+              <p>Order Online</p>
+            </Link>
+            <Link to="/login">
+              <p>Login</p>
+            </Link>
           </div>
           <div className="footer-item">
             <h4>Contact</h4>
-            <p>Address</p>
-            <p>Phone number</p>
-            <p>email</p>
+            <p>W Madison St, Chicago</p>
+            <p>000-222-333</p>
+            <p>littlelemon@email.com</p>
           </div>
           <div className="footer-item">
             <h4>Links</h4>
-            <p>Address</p>
-            <p>Phone number</p>
-            <p>email</p>
+            <p>
+              <a href="https://unsplash.com/photos/brown-and-white-long-fur-cat-with-red-ribbon-GNVn_4bC2kk">
+                Address
+              </a>
+            </p>
+            <p>
+              <a href="https://unsplash.com/photos/white-and-brown-tabby-kittens-vmFEBIEz0hQ">
+                Twitter
+              </a>
+            </p>
+            <p></p>
           </div>
         </div>
       </section>
