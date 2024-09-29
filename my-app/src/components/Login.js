@@ -1,7 +1,12 @@
+import cat from '../images/cat2.jpg'
+
 const Login = () => {
   return (
     <>
-      <p>Login Route</p>
+      <h1 className="h1booking">Login</h1>
+      <div className="bookingConfirmed">
+        <img src={cat} alt="cat" />
+      </div>
     </>
   )
 }

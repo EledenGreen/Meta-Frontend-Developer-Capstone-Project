@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import cat from '../images/bookingMenu.jpg'
 const GuestErrorMessage = () => {
   return <p className="fieldError">Value should be greater than 0</p>
 }
@@ -73,6 +73,7 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
           <option>Anniversary</option>
         </select>
         <input
+          className="submitButton"
           type="submit"
           value="Make Your reservation"
           disabled={!getFormValid()}

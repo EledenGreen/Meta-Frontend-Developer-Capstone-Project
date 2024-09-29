@@ -1,10 +1,11 @@
+import footerimg from '../images/restaurant3.jpg'
 const Footer = () => {
   return (
     <>
       <section className="footer">
         <div className="footer-grid">
           <div className="footer-item">
-            <img src="footer.png" alt="footer img" />
+            <img src={footerimg} alt="footer img" />
           </div>
           <div className="footer-item">
             <h4>Navigation</h4>

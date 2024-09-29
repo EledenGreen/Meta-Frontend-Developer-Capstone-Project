@@ -1,3 +1,7 @@
+import greekSalad from '../images/greek salad.jpg'
+import bruschetta from '../images/bruchetta.jpg'
+import lemon from '../images/lemon dessert.jpg'
+
 const Highlights = () => {
   return (
     <>
@@ -9,21 +13,21 @@ const Highlights = () => {
 
         <div className="specials-grid">
           <div className="specials-item">
-            <img src="greeksalad.jpg" alt="greeksalad" />
+            <img src={greekSalad} alt="greeksalad" />
             <h3>Greek salad</h3>
             <p>$12.99</p>
             <p>The famous greek salad of lettucces</p>
             <button className="btn">Order Delivery</button>
           </div>
           <div className="specials-item">
-            <img src="bruschetta" alt="bruschetta" />
+            <img src={bruschetta} alt="bruschetta" />
             <h3>Bruschetta</h3>
             <p>$5.99</p>
             <p>The famous Bruschetta</p>
             <button className="btn">Order Delivery</button>
           </div>
           <div className="specials-item">
-            <img src="LemonDesssort.jpg" alt="Lemon Dessert" />
+            <img src={lemon} alt="Lemon Dessert" />
             <h3>Lemon Dessert</h3>
             <p>$15.00</p>
             <p>The famous Lemon Dessert</p>

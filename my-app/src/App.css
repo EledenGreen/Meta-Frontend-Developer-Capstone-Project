@@ -66,6 +66,7 @@ nav li {
 
 .hero img {
   max-width: 40%;
+  max-height: 400px;
 }
 
 .specials {
@@ -101,6 +102,10 @@ p {
 
 .specials-item button {
   margin-top: 10px;
+}
+
+.specials-item img {
+  max-width: 150px;
 }
 
 .specials-header {
@@ -148,6 +153,11 @@ p {
   align-items: center;
 }
 
+.testimonial-detail img {
+  max-width: 150px;
+  border-radius: 10%;
+}
+
 .about {
   background-color: aliceblue;
   justify-content: center;
@@ -156,7 +166,7 @@ p {
 }
 
 .about-content {
-  margin-left: -10vw;
+  margin-left: 0vw;
 }
 
 .about-content h1 {
@@ -180,6 +190,7 @@ p {
 
 .about img {
   max-width: 50%;
+  max-height: 400px;
 }
 
 .footer {
@@ -208,6 +219,13 @@ p {
   font-size: 20px;
 }
 
+.footer img {
+  margin-top: 5%;
+  max-width: 60%;
+  max-height: 500px;
+  border-radius: 5%;
+}
+
 .bookingForm {
   display: grid;
   gap: 20px;
@@ -215,9 +233,48 @@ p {
   justify-content: center;
 }
 
+.bookingForm h1 {
+  font-family: 'Markazi Text';
+  font-weight: normal;
+  font-size: 60px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.bookingForm label,
+option,
+button {
+  font-family: 'Karla';
+  font-weight: normal;
+  font-size: 20px;
+  color: black;
+}
+
+.bookingForm .submitButton {
+  background-color: #f4ce14;
+}
+
 .fieldError {
   color: red;
   font-size: 0.85em;
   padding: 0;
   margin: 0;
+}
+
+.bookingMenu {
+  width: 100%;
+}
+
+.bookingConfirmed {
+  display: flex;
+  justify-content: center;
+}
+
+.h1booking {
+  display: flex;
+  justify-content: center;
+}
+
+.bookingConfirmed img {
+  max-width: 75%;
 }

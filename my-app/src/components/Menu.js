@@ -1,7 +1,12 @@
+import cat from '../images/booking3.jpg'
+
 const Menu = () => {
   return (
     <>
-      <p>Menu Route</p>
+      <h1 className="h1booking">Menu</h1>
+      <div className="bookingConfirmed">
+        <img src={cat} alt="cat" />
+      </div>
     </>
   )
 }

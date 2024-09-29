@@ -1,3 +1,4 @@
+import aboutimg from '../images/restaurant1.jpg'
 const About = () => {
   return (
     <>
@@ -5,9 +6,9 @@ const About = () => {
         <div className="about-content">
           <h1>Little Lemon</h1>
           <h2>Chicago</h2>
-          <p>The best restaurant in Chicago. serving the best dishes</p>
+          <p>The best restaurant in Chicago, serving the best dishes.</p>
         </div>
-        <img src="collage.png" alt="collage" />
+        <img src={aboutimg} alt="collage" />
       </section>
     </>
   )

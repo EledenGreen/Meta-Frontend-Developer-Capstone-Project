@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-
+import heroImg from '../images/restaurant2.jpg'
 const Hero = () => {
   return (
     <>
@@ -15,7 +15,7 @@ const Hero = () => {
             <button className="btn">Reserve a table</button>
           </Link>
         </div>
-        <img src="hero-img.jpg" alt="hero img" />
+        <img src={heroImg} alt="hero img" />
       </section>
     </>
   )
