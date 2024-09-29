@@ -76,6 +76,7 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
           type="submit"
           value="Make Your reservation"
           disabled={!getFormValid()}
+          aria-label="on Click"
         />
       </form>
     </>
