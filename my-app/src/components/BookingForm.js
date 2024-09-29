@@ -34,7 +34,7 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
         <input type="date" id="res-date" onChange={handleDateChange} required />
         <label htmlFor="res-time">Choose time</label>
         <select
-          id="res-time "
+          id="res-time"
           onChange={(e) => setTime(e.target.value)}
           value={time}
           required

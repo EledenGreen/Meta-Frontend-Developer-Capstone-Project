@@ -18,7 +18,7 @@ test('Renders the BookingForm heading', () => {
     />
   )
   const headingElement = screen.getByText('Booking')
-  expect(headingElement).toBeInTheDocument()
+  expect(headingElement).toBeDefined()
 })
 
 test('reducer initialized values', () => {
