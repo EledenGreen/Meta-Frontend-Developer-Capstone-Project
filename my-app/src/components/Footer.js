@@ -38,12 +38,20 @@ const Footer = () => {
           <div className="footer-item">
             <h4>Links</h4>
             <p>
-              <a href="https://unsplash.com/photos/brown-and-white-long-fur-cat-with-red-ribbon-GNVn_4bC2kk">
+              <a
+                href="https://unsplash.com/photos/brown-and-white-long-fur-cat-with-red-ribbon-GNVn_4bC2kk"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 Address
               </a>
             </p>
             <p>
-              <a href="https://unsplash.com/photos/white-and-brown-tabby-kittens-vmFEBIEz0hQ">
+              <a
+                href="https://unsplash.com/photos/white-and-brown-tabby-kittens-vmFEBIEz0hQ"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 Twitter
               </a>
             </p>
