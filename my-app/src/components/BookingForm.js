@@ -1,28 +1,28 @@
 import { useState } from 'react'
 
-const BookingForm = (props) => {
+const BookingForm = ({ setTime, availableTimes, dispatch }) => {
   const [date, setDate] = useState()
   const [guest, setGuest] = useState()
   const [occasion, setOccassion] = useState()
+
+  const handleDateChange = (event) => {
+    const selectedDate = event.target.value
+    dispatch({ type: 'UPDATE_TIMES', payload: selectedDate })
+  }
 
   return (
     <>
       <form className="bookingForm">
         <h1>Booking</h1>
         <label htmlFor="res-date">Choose date</label>
-        <input
-          type="date"
-          id="res-date"
-          onChange={(e) => setDate(e.target.value)}
-        />
+        <input type="date" id="res-date" onChange={handleDateChange} />
         <label htmlFor="res-time">Choose time</label>
-        <select id="res-time " onChange={(e) => props.setTime(e.target.value)}>
-          <option>17:00</option>
-          <option>18:00</option>
-          <option>19:00</option>
-          <option>20:00</option>
-          <option>21:00</option>
-          <option>22:00</option>
+        <select id="res-time " onChange={(e) => setTime(e.target.value)}>
+          {availableTimes.map((time, index) => (
+            <option key={index} value={time}>
+              {time}
+            </option>
+          ))}
         </select>
         <label htmlFor="guests">Number of guests</label>
         <input

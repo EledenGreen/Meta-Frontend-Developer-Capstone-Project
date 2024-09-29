@@ -1,22 +1,27 @@
 import BookingForm from './BookingForm'
-import { useReducer, useState } from 'react'
+import { useEffect, useReducer, useState } from 'react'
+import { fetchAPI } from '../utils/api'
 
 export const updateTimes = (state, action) => {
   switch (action.type) {
-    case 'UPDATE_TIMES':
-      return state
+    case 'UPDATE_TIMES': {
+      const selectedDate = action.payload
+      const availableTimes = fetchAPI(new Date(selectedDate))
+      return { ...state, times: availableTimes }
+    }
     default:
       return state
   }
 }
 
 export const initializeTimes = () => {
-  return ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00']
+  const today = new Date()
+  return { times: fetchAPI(today) }
 }
 
 const BookingPage = () => {
   const [time, setTime] = useState()
-  const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes)
+  const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes())
 
   return (
     <>
@@ -24,7 +29,7 @@ const BookingPage = () => {
 
       <BookingForm
         setTime={setTime}
-        availableTimes={availableTimes}
+        availableTimes={availableTimes.times}
         dispatch={dispatch}
       />
     </>
