@@ -31,6 +31,37 @@ nav li {
   font-family: 'Karla', sans-serif;
 }
 
+.menu {
+  display: none;
+  flex-direction: column;
+  text-align: left;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+}
+
 .hero {
   background-color: #6e6f6e;
   display: flex;
@@ -277,4 +308,111 @@ button {
 
 .bookingConfirmed img {
   max-width: 75%;
+}
+
+@media (max-width: 768px) {
+  button {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .hero-content > h2 {
+    font-size: 40px;
+  }
+
+  .hero-content h3 {
+    font-size: 24px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    max-width: 90%;
+  }
+
+  .hero img {
+    max-width: 90%;
+    max-height: 300px;
+    margin-top: 5%;
+    align-self: center;
+  }
+
+  .specials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .specials-item h3,
+  .specials-item p {
+    font-size: 20px;
+  }
+
+  .specials-item img {
+    max-width: 100px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-item {
+    font-size: 12px;
+  }
+
+  .testimonial-detail img {
+    max-width: 100px;
+  }
+
+  .about {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .about-content h1 {
+    font-size: 40px;
+  }
+
+  .about-content h2 {
+    font-size: 24px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+    max-width: 90%;
+  }
+
+  .about img {
+    max-width: 90%;
+    max-height: 250px;
+    align-self: center;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer img {
+    max-width: 50%;
+  }
+
+  .bookingForm {
+    gap: 10px;
+  }
+
+  .bookingForm h1 {
+    font-size: 40px;
+  }
+
+  .bookingForm label,
+  option,
+  button {
+    font-size: 16px;
+  }
+
+  .bookingConfirmed img {
+    max-width: 90%;
+  }
 }

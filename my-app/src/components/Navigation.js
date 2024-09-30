@@ -5,7 +5,7 @@ const Navigation = () => {
   return (
     <>
       <nav>
-        <ul>
+        <ul className="navMenu">
           <li>
             <Link to="/">
               <img src={img} alt="no prop" />
