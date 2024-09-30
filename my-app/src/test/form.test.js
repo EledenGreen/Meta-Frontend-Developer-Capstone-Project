@@ -40,7 +40,7 @@ describe('Input field validation', () => {
     })
 
     fireEvent.click(
-      screen.getByRole('button', { name: 'Make Your reservation' })
+      screen.getByRole('button', { value: /Make Your reservation/ })
     )
 
     expect(submitForm).toHaveBeenCalledTimes(1)

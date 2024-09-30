@@ -18,7 +18,7 @@ const Navigation = () => {
             <Link to="/menu">Menu</Link>
           </li>
           <li>
-            <Link to="/reservation">Reservations</Link>
+            <Link to="/BookingPage">Reservations</Link>
           </li>
           <li>
             <Link to="/order">Order Online</Link>

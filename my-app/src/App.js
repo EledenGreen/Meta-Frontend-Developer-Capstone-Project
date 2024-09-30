@@ -7,7 +7,6 @@ import About from './components/About'
 import Footer from './components/Footer'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Menu from './components/Menu'
-import Reservation from './components/Reservation'
 import Login from './components/Login'
 import Order from './components/Order'
 import BookingPage from './components/BookingPage'
@@ -33,7 +32,6 @@ function App() {
 
         <Route path="/about" element={<About />} />
         <Route path="/menu" element={<Menu />} />
-        <Route path="/reservation" element={<Reservation />} />
         <Route path="/order" element={<Order />} />
         <Route path="/login" element={<Login />} />
         <Route path="/BookingPage" element={<BookingPage />} />

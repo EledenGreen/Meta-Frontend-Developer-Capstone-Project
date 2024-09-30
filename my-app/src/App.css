@@ -416,3 +416,45 @@ button {
     max-width: 90%;
   }
 }
+
+.photo-collage {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.photo {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 5px solid white;
+}
+
+.photo1 {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.photo2 {
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .photo-collage {
+    max-width: 100%;
+  }
+
+  .photo {
+    width: 100%;
+  }
+
+  .photo2 {
+    width: 80%;
+    bottom: 0;
+    right: 0;
+  }
+}

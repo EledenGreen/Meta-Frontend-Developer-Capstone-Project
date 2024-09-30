@@ -1,4 +1,5 @@
 import aboutimg from '../images/restaurant1.jpg'
+import photo2 from '../images/restauranfood.jpg'
 const About = () => {
   return (
     <>
@@ -8,7 +9,10 @@ const About = () => {
           <h2>Chicago</h2>
           <p>The best restaurant in Chicago, serving the best dishes.</p>
         </div>
-        <img src={aboutimg} alt="collage" />
+        <div className="photo-collage">
+          <img src={aboutimg} className="photo photo1" alt="collage" />
+          <img src={photo2} className="photo photo2" alt="collage" />
+        </div>
       </section>
     </>
   )
